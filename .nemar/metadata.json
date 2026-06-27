@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005795",
-  "source": "openneuro",
-  "source_id": "ds005795",
+  "pipeline_stage": "validated",
   "title": "MULTI-CLARID (Multimodal Category Learning and Resting-state Imaging Data)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jörg Stadler": {},
     "Torsten Stöter": {},
@@ -17,30 +17,85 @@
     "Susann Wolff": {},
     "André Brechmann": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005795.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005795",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005795",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005795",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.10.0",
-  "recording_modality": [
-    "anat",
-    "eeg",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "func"
   ],
   "funding_references": [
     {
-      "funder_name": "German Science Foundation (BR2267/9-1)"
+      "funder_name": "German Science Foundation",
+      "award_number": "BR2267/9-1"
     }
-  ]
+  ],
+  "modalities": [
+    "anat",
+    "eeg",
+    "func"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "MULTI-CLARID is a multimodal neuroimaging dataset combining simultaneous fMRI and EEG recordings during an auditory category learning task and resting-state fMRI. The dataset includes 63-channel EEG with physiological monitoring (ECG, EOG, EMG, skin conductance), structural MRI (T1-weighted and PD-weighted UTE), and behavioral measures. Participants learned to classify frequency-modulated sounds based on binary acoustic features through trial-and-error feedback over approximately 27 minutes, providing a rich resource for investigating neural mechanisms of category learning and multimodal brain imaging integration.",
+  "methods_description": "Data were acquired using a 3 Tesla Philips Achieva dStream MRI scanner with 32-channel head coil. EEG was recorded at 5 kHz using 64 channels (including ECG) with BrainAmp MRplus amplifiers, supplemented by 16-channel bipolar recordings for EOG, EMG, and artifact correction. Respiration and heart rate were recorded at 100 Hz. Auditory stimuli were presented via MR-compatible headphones. The category learning task comprised 180 trials with pseudo-randomized presentation of frequency-modulated sounds varying in duration, frequency modulation direction, intensity, speed, and frequency range. Participants indicated category membership via button press and received immediate or delayed feedback. Resting-state fMRI was acquired for 10 minutes with eyes closed.",
+  "keywords": [
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "category learning"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "resting-state fMRI"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "physiological monitoring"
+    },
+    {
+      "term": "trial-and-error learning"
+    }
+  ],
+  "source_hash": "e5b6329b9583c7f546fece7f0cc7b86e37c7ba4081cd105e9daabe3a705af549"
 }
