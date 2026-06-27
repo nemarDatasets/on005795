@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "MULTI-CLARID (Multimodal Category Learning and Resting-state Imaging Data)",
+  "description": "MULTI-CLARID is a multimodal neuroimaging dataset combining simultaneous fMRI and EEG recordings from participants performing an auditory category learning task and resting-state fMRI. The dataset includes 63-channel EEG (plus ECG) with physiological monitoring (EOG, facial EMG, skin conductance), structural MRI (T1-weighted and PD-weighted UTE), and behavioral measures. This resource enables investigation of neural mechanisms underlying category learning and brain functional organization at rest.",
+  "methods_description": "Data were acquired using a 3 Tesla Philips Achieva dStream MRI scanner with 32-channel head coil. EEG was recorded at 5 kHz using BrainAmp MRplus amplifiers (64 channels including ECG), with additional physiological monitoring via BrainAmp ExG MR amplifiers for EOG, EMG, and skin conductance. Auditory stimuli were presented via MR-compatible headphones. The category learning task comprised 180 trials with frequency-modulated sounds varying across five binary features (duration, frequency modulation direction, intensity, speed, and frequency range). Participants indicated category membership via button press with trial-by-trial feedback. Resting-state fMRI was acquired for 10 minutes with eyes closed. EEG preprocessing included MR-artifact correction, bandpass filtering (0.3-125 Hz), downsampling to 500 Hz, and pulse/motion artifact correction.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,12 +19,36 @@
     "Susann Wolff": {},
     "André Brechmann": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005795.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "fMRI"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "category learning"
+    },
+    {
+      "term": "auditory perception"
+    },
+    {
+      "term": "resting-state fMRI"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "auditory learning"
+    },
+    {
+      "term": "physiological monitoring"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005795",
       "identifier_type": "URL",
@@ -37,6 +63,11 @@
       "identifier": "10.18112/openneuro.ds005795",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005795.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -45,14 +76,14 @@
       "award_number": "BR2267/9-1"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "eeg",
     "func"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "6.9 GB (294 files)"
   ],
   "formats": [
     ".eeg",
@@ -61,41 +92,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "MULTI-CLARID is a multimodal neuroimaging dataset combining simultaneous fMRI and EEG recordings during an auditory category learning task and resting-state fMRI. The dataset includes 63-channel EEG with physiological monitoring (ECG, EOG, EMG, skin conductance), structural MRI (T1-weighted and PD-weighted UTE), and behavioral measures. Participants learned to classify frequency-modulated sounds based on binary acoustic features through trial-and-error feedback over approximately 27 minutes, providing a rich resource for investigating neural mechanisms of category learning and multimodal brain imaging integration.",
-  "methods_description": "Data were acquired using a 3 Tesla Philips Achieva dStream MRI scanner with 32-channel head coil. EEG was recorded at 5 kHz using 64 channels (including ECG) with BrainAmp MRplus amplifiers, supplemented by 16-channel bipolar recordings for EOG, EMG, and artifact correction. Respiration and heart rate were recorded at 100 Hz. Auditory stimuli were presented via MR-compatible headphones. The category learning task comprised 180 trials with pseudo-randomized presentation of frequency-modulated sounds varying in duration, frequency modulation direction, intensity, speed, and frequency range. Participants indicated category membership via button press and received immediate or delayed feedback. Resting-state fMRI was acquired for 10 minutes with eyes closed.",
-  "keywords": [
-    {
-      "term": "fMRI"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "category learning"
-    },
-    {
-      "term": "auditory processing"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "resting-state fMRI"
-    },
-    {
-      "term": "simultaneous EEG-fMRI"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "physiological monitoring"
-    },
-    {
-      "term": "trial-and-error learning"
-    }
-  ],
-  "source_hash": "e5b6329b9583c7f546fece7f0cc7b86e37c7ba4081cd105e9daabe3a705af549"
+  "source_hash": "66a1d8084f11deaf090f139dee3db65d739d312cfbae5d536c8db01b94ff1f9b"
 }
