@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005795-blue)](https://doi.org/10.82901/nemar.on005795)
+
 Overview
 
 The study comprises data of a combined fMRI/EEG experiment. The EEG files contain 63 head channels, ECG, EOG, facial EMG and skin conductance data. A physio file contains respiration and finger-pulse data. In addition, a T1 weighted whole-brain anatomical MR scan, a PD weighted (UTE) scan for electrode localization is provided (defacing was performed using https://github.com/cbinyu/pydeface). Additional data of the participants (T2 weighted images, button press dynamics, hearing threshold, hearing abilities, and personality traits (NEO-FFI, BIS/BAS, SVF, ERQ, MMG) are available on request.
