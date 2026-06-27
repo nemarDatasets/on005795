@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "MULTI-CLARID (Multimodal Category Learning and Resting-state Imaging Data)",
-  "description": "MULTI-CLARID is a multimodal neuroimaging dataset combining simultaneous fMRI and EEG recordings from participants performing an auditory category learning task and resting-state fMRI. The dataset includes 63-channel EEG (plus ECG) with physiological monitoring (EOG, facial EMG, skin conductance), structural MRI (T1-weighted and PD-weighted UTE), and behavioral measures. This resource enables investigation of neural mechanisms underlying category learning and brain functional organization at rest.",
-  "methods_description": "Data were acquired using a 3 Tesla Philips Achieva dStream MRI scanner with 32-channel head coil. EEG was recorded at 5 kHz using BrainAmp MRplus amplifiers (64 channels including ECG), with additional physiological monitoring via BrainAmp ExG MR amplifiers for EOG, EMG, and skin conductance. Auditory stimuli were presented via MR-compatible headphones. The category learning task comprised 180 trials with frequency-modulated sounds varying across five binary features (duration, frequency modulation direction, intensity, speed, and frequency range). Participants indicated category membership via button press with trial-by-trial feedback. Resting-state fMRI was acquired for 10 minutes with eyes closed. EEG preprocessing included MR-artifact correction, bandpass filtering (0.3-125 Hz), downsampling to 500 Hz, and pulse/motion artifact correction.",
+  "description": "MULTI-CLARID is a multimodal neuroimaging dataset combining simultaneous fMRI and EEG recordings from participants performing an auditory category learning task and resting-state fMRI. The dataset includes 64-channel EEG (63 head channels plus ECG) with physiological monitoring (EOG, facial EMG, skin conductance), structural MRI (T1-weighted and PD-weighted UTE), and behavioral measures. This resource enables investigation of neural mechanisms underlying category learning and brain functional connectivity. Data were acquired at the Combinatorial NeuroImaging (CNI) core facility of the Leibniz Institute for Neurobiology (LIN) Magdeburg.",
+  "methods_description": "Data were acquired using a 3 Tesla Philips Achieva dStream MRI scanner with 32-channel head coil. EEG was recorded at 5 kHz using 64-channel BrainAmp amplifiers (two 32-channel BrainAmp MRplus units) with hardware filtering (0.01-250 Hz). The 64-channel EEG comprised 63 head channels plus ECG. Additional physiological signals included 2 EOG, 4 EMG (Corrugator, Zygomaticus), and skin conductance channels. Auditory stimuli were presented via MR-compatible headphones. The category learning task comprised 180 trials with frequency-modulated sounds varying across five binary features (duration, frequency modulation direction, intensity, speed, frequency range). Participants indicated category membership via button press with trial-and-trial feedback. Resting-state fMRI was acquired for 10 minutes with eyes closed. Physiological signals (respiration, heart rate) were recorded at 100 Hz. EEG preprocessing included MR-artifact correction, bandpass filtering (0.3-125 Hz), and downsampling to 500 Hz. Raw data for optimized artifact correction are available upon request.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,7 +30,7 @@
       "term": "category learning"
     },
     {
-      "term": "auditory perception"
+      "term": "auditory processing"
     },
     {
       "term": "resting-state fMRI"
@@ -45,7 +45,19 @@
       "term": "auditory learning"
     },
     {
+      "term": "perceptual learning"
+    },
+    {
       "term": "physiological monitoring"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "physiological signals"
+    },
+    {
+      "term": "LIN Magdeburg"
     }
   ],
   "related_identifiers": [
